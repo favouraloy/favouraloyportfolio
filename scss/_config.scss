@@ -1,6 +1,6 @@
 // media query mixins
 
-@mixin mediaSmartPhone {
+@mixin mediaSmartPhones {
   @media screen and (max-width: 500px) {
     @content;
   }
@@ -10,7 +10,7 @@
     @content;
   }
 }
-@mixin mediaLargePhones {
+@mixin mediaLargeDevices {
   @media screen and (min-width: 769px) and (max-width: 1170px) {
     @content;
   }
@@ -18,5 +18,14 @@
 @mixin mediaExtraLargeDevices {
   @media screen and (min-width: 1171px) {
     @content;
+  }
+}
+
+// set text color for dark mode and light mode
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
   }
 }

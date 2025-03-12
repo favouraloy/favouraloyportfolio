@@ -1,5 +1,4 @@
 @import "config";
-@import "mobile";
 // Variable for colors
 $primary-color: #444;
 $secondary-color: blue;
@@ -43,10 +42,13 @@ $home-image: url(../dist/img/background.jpg);
 body {
   @include background();
   background-color: #444;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Headings */
@@ -86,7 +88,8 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  // for a sticky footer use a func for height
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -125,7 +128,7 @@ main {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background-color: #fff;
+    background-color: set-text-color($primary-color);
     @include easeOut();
   }
 
@@ -157,7 +160,6 @@ main {
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
-  // transition: opacity 0.3s ease, visibility 0.3s;
 
   &.show {
     visibility: visible;
@@ -174,6 +176,7 @@ main {
     height: 100vh;
     overflow: hidden;
   }
+
   // nav side
   &-nav {
     margin: 0;
@@ -201,10 +204,10 @@ main {
 
     .portrait {
       width: 250px;
-      height: 250px;
-      background: url(../dist/img/portrait.jpg);
+      height: 300px;
+      background: url(../dist/img/ress2.jpg);
       border-radius: 50%;
-      border: solid 3px rgba(3, 27, 15, 0.9);
+      border: solid 3px rgba(3, 27, 15, 1.9);
     }
   }
 
@@ -229,7 +232,7 @@ main {
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color ($primary-color);
     text-decoration: none;
     @include easeOut();
 
@@ -246,3 +249,130 @@ main {
     transition-delay: $x * 0.1s;
   }
 }
+
+// about page
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bio-image bio bio bio"
+    "job-info job-info job-info job-info"
+    "job-1 job-1 job-2 job-2";
+  grid-template-columns: repeat(4, 1fr);
+
+  .bio-image {
+    grid-area: bio-image;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.7rem;
+  }
+
+  .job-info {
+    grid-area: job-info;
+    font-size: 1.8rem;
+    font-weight: bolder;
+  }
+
+  .job-1 {
+    grid-area: job-1;
+  }
+
+  .job-2 {
+    grid-area: job-2;
+  }
+
+  .job {
+    background: lighten($color: $primary-color, $amount: 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+
+// work page
+.projects {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.6;
+      border-color: $secondary-color;
+
+      @include easeOut();
+    }
+  }
+}
+
+// contact page
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  overflow: hidden;
+
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 2rem;
+    @include easeOut();
+
+    &:hover {
+      padding: 1rem 1.5rem;
+      background-color: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+}
+
+// button styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  align-items: center;
+  text-align: center;
+
+  &:hover {
+    background-color: #444;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background-color: darken($color: $primary-color, $amount: 15);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background-color: lighten($color: $primary-color, $amount: 15);
+  color: #fff;
+}
+
+// footer
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: darken($color: $primary-color, $amount: 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+
+@import "mobile";

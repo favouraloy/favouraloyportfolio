@@ -7,12 +7,12 @@
 }
 
 body {
-    /* background: url(../dist/img/background.jpg) no-repeat center;
+    background: url(../dist/img/background.jpg) no-repeat center;
     background-color: #444;
     color: #fff;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5; */
+    line-height: 1.5;
 }
 
 body::after {
@@ -124,13 +124,15 @@ main .icons a:hover {
 
 /* menu overlay */
 .menu {
-    &.btn{}
+    &.btn {}
+
     position: fixed;
     top: 0;
     width: 100%;
     opacity: 0.9;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s;
+    transition: opacity 0.3s ease,
+    visibility 0.3s;
 }
 
 .menu .show {
