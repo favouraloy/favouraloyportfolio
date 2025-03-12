@@ -13,7 +13,7 @@ body {
 }
 
 body#bg-image {
-  background: url(../dist/img/background.jpg);
+  background: url(/img/background.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -204,7 +204,7 @@ main#home h1 {
 .menu-branding .portrait {
   width: 250px;
   height: 300px;
-  background: url(../dist/img/ress2.jpg);
+  background: url(/img/ress2.jpg);
   border-radius: 50%;
   border: solid 3px #031b0f;
 }
