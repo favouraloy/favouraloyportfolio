@@ -2,65 +2,599 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
-  <!-- <link rel="stylesheet" href="./dist/main.css" /> -->
-  <link rel="stylesheet" href="./main.css" />
-  <title>Welcome To My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Home | Welcome to My Portfolio</title>
 </head>
 
-<body id="bg-image">
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">Favour Aloy</a>
 
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-      </div>
-      <ul class="menu-nav">
-        <li class="nav-item current">
-          <a href="/" class="nav-link"> Home </a>
-        </li>
-        <li class="nav-item">
-          <a href="./about.html" class="nav-link"> About Me </a>
-        </li>
-        <li class="nav-item">
-          <a href="./work.html" class="nav-link"> My Work </a>
-        </li>
-        <li class="nav-item">
-          <a href="./contact.html" class="nav-link"> Contact </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
-  <main id="home">
-    <h1 class="lg-heading">
-      Favour <span class="text-secondary"> Aloy </span>
-    </h1>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list grid">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">
+                            <i class="ri-home-4-line"></i> Home</a>
+                    </li>
 
-    <h2 class="sm-heading">Web Developer, Web Consultant & Entrepreneur.</h2>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <i class="ri-mark-pen-line"></i> About</a>
+                    </li>
 
-    <div class="icons">
-      <a href="https://x.com/favour_aloy98?s=21"><i class="fab fa-twitter fa-2x"></i></a>
-      <a
-        href="https://www.linkedin.com/in/favour-aloy-ba7a94292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i
-          class="fab fa-linkedin fa-2x"></i></a>
-      <a href="https://www.instagram.com/favouraloy98?igsh=MW14NHVkOGQxZ3ozMA%3D%3D&utm_source=qr"><i
-          class="fab fa-instagram fa-2x"></i></a>
-      <a href="https://github.com/favouraloy"><i class="fab fa-github fa-2x"></i></a>
-    </div>
-  </main>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">
+                            <i class="ri-briefcase-4-line"></i> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">
+                            <i class="ri-image-line"></i> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="ri-chat-1-line"></i> Contact</a>
+                    </li>
+                </ul>
 
-  <footer id="main-footer">Copyright &copy; 2025</footer>
+                <!-- close button -->
+                <div class="nav-close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
 
-  <script src="./app.js"></script>
+            <div class="nav-buttons">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- toggle button -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home-container container grid section-border">
+                <div class="home-data grid">
+                    <h1 class="home-title">Hi, I'm Favour Aloy <br>
+                        A Frontend Developer</h1>
+
+                    <div class="home-blob grid">
+                        <div class="home-perfil">
+                            <img src="assets/img/fave11.jpg" alt="image">
+                        </div>
+
+                        <img src="assets/img/shape-wawes.svg" alt="background" class="home-shape-waves">
+                        <img src="assets/img/shape-circle.svg" alt="background" class="home-shape-circle">
+                    </div>
+
+                    <ul class="home-social">
+                        <a href="https://www.instagram.com/favouraloy98?igsh=MW14NHVkOGQxZ3ozMA%3D%3D&utm_source=qr"
+                            target="_blank" class="home-social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://github.com/favouraloy" target="_blank" class="home-social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/favour-aloy-ba7a94292" target="_blank"
+                            class="home-social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://x.com/favour_aloy98?s=21" target="_blank" class="home-social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <!--==================== HOME INFO 1 ====================-->
+                <div class="home-info">
+                    <div>
+                        <h3 class="home-info-title">
+                            WHAT YOU SHOULD KNOW
+                        </h3>
+
+                        <p class="home-info-description">
+                            Hi, my name is Favour Aloy, a Frontend Developer.
+                            i am passionate about designing and building clean
+                            and beautiful web interfaces.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home-info-title">
+                            CONTACT
+                        </h3>
+
+                        <p class="home-info-description">
+                            favouraloy98@gmail.com <br>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home-info-title">
+                            WHAT I DO
+                        </h3>
+
+                        <p class="home-info-description">
+                            Web Development <br>
+                            Web Design <br>
+                            Web Audit & Management
+                        </p>
+                    </div>
+                </div>
+
+                <!--==================== HOME INFO 2 ====================-->
+                <div class="home-info">
+                    <div>
+                        <h3 class="home-info-title">
+                            YEARS OF EXPERIENCE
+                        </h3>
+
+                        <p class="home-info-number"> 12+ </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home-info-title">
+                            COMPLETED PROJECTS
+                        </h3>
+
+                        <p class="home-info-number"> 10+ </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home-info-title">
+                            AGENCIES WORKED WITH
+                        </h3>
+
+                        <p class="home-info-number"> 04+ </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="about">
+            <h2 class="section-title">Skills</h2>
+            <span class="section-subtitle">What I Can Do</span>
+
+
+            <div class="skills-container grid container section-border">
+                <!--==================== SKILLS 1 ====================-->
+
+                <div class="skills-content">
+                    <h3 class="skills-title">
+                        <i class="ri-braces-line"></i> Frontend Development
+                    </h3>
+
+                    <div class="skills-info">
+                        <div class="skills-data">
+                            <div class="skills-blob">
+                                <img src="assets/img/html-1.svg" alt="skills-image">
+                            </div>
+
+                            <h3 class="skills-name">HTML</h3>
+                            <span class="skills-subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-blob">
+                                <img src="assets/img/css-3.svg" alt="skills-image">
+                            </div>
+
+                            <h3 class="skills-name">CSS</h3>
+                            <span class="skills-subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-blob">
+                                <img src="assets/img/logo-javascript.svg" alt="skills-image">
+                            </div>
+
+                            <h3 class="skills-name">Javascript</h3>
+                            <span class="skills-subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-blob">
+                                <img src="assets/img/about-github.svg" alt="skills-image">
+                            </div>
+
+                            <h3 class="skills-name">Github</h3>
+                            <span class="skills-subtitle">Basic</span>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-blob">
+                                <img src="assets/img/git-icon.svg" alt="skills-image">
+                            </div>
+
+                            <h3 class="skills-name">Git</h3>
+                            <span class="skills-subtitle">Basic</span>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-blob">
+                                <img src="assets/img/about-sass.svg" alt="skills-image">
+                            </div>
+
+                            <h3 class="skills-name">SASS</h3>
+                            <span class="skills-subtitle">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <!-- <section class="qualification section" id="qualification">
+
+        </section> -->
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section-title"> Services</h2>
+            <span class="section-subtitle">What I Offer</span>
+
+            <div class="services-container container grid section-border">
+                <div class="services-card">
+                    <i class="ri-layout-5-line"></i>
+
+                    <h2 class="services-title">
+                        UI/UX <br>
+                        Implementation
+                    </h2>
+
+                    <p class="services-description">
+                        I Turn UI/UX designs (from Figma, Adobe XD, etc.)
+                        into fully functional web interfaces.
+                    </p>
+
+                    <div class="services-border"></div>
+                </div>
+
+                <div class="services-card">
+                    <i class="ri-code-box-line"></i>
+
+                    <h2 class="services-title">
+                        Custom Website <br>
+                        Development
+                    </h2>
+
+                    <p class="services-description">
+                        I Build websites from scratch using HTML, CSS & JavaScript.
+                    </p>
+
+                    <div class="services-border"></div>
+                </div>
+
+                <div class="services-card">
+                    <i class="ri-refresh-line"></i>
+
+                    <h2 class="services-title">
+                        Website Update &<br>
+                        Modernization
+                    </h2>
+
+                    <p class="services-description">
+                        Updating outdated websites with a
+                        modern look and feel, improved performance, and
+                        responsiveness.
+                    </p>
+
+                    <div class="services-border"></div>
+                </div>
+
+                <div class="services-card">
+                    <i class="ri-pages-line"></i>
+
+                    <h2 class="services-title">
+                        Performance<br>
+                        Optimization
+                    </h2>
+
+                    <p class="services-description">
+                        Minimizing load times, optimizing assets, and improving Core Web Vitals.
+                    </p>
+
+                    <div class="services-border"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section-title"> Projects </h2>
+            <span class="section-subtitle"> Most Recent Work</span>
+
+
+            <div class="container section-border">
+                <div class="projects-container swiper">
+                    <div class="swiper-wrapper">
+                        <!--==================== PROJECT 1 ====================-->
+                        <div class="projects-content swiper-slide">
+                            <img src="assets/img/Jude Iria.png" alt="project image" class="projects-img">
+
+                            <div class="span projects-subtitle">Jude Iria Brand Website</div>
+                            <h1 class="projects-title">Website Development</h1>
+
+                            <a href="#projects" class="projects-button">
+                                See More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <!--==================== PROJECT 2 ====================-->
+                        <div class="projects-content swiper-slide">
+                            <img src="assets/img/haircoin2.png" alt="project image" class="projects-img">
+
+                            <div class="span projects-subtitle">Haircoin Brand Website</div>
+                            <h1 class="projects-title">Landing Page Design</h1>
+
+                            <a href="#projects" class="projects-button">
+                                See More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <!--==================== PROJECT 3 ====================-->
+                        <div class="projects-content swiper-slide">
+                            <img src="assets/img/bamalik.png" alt="project image" class="projects-img">
+
+                            <div class="span projects-subtitle">Website Design for Bamalik Architects</div>
+                            <h1 class="projects-title">Website Design</h1>
+
+                            <a href="#projects" class="projects-button">
+                                See More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <!--==================== PROJECT 4 ====================-->
+                        <div class="projects-content swiper-slide">
+                            <img src="assets/img/screenshot-1743929826400.png" alt="project image" class="projects-img">
+
+                            <div class="span projects-subtitle">BeautyHomes Website Design</div>
+                            <h1 class="projects-title">Single Page Website</h1>
+
+                            <a href="#projects" class="projects-button">
+                                See More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <!--==================== PROJECT 5 ====================-->
+                        <div class="projects-content swiper-slide">
+                            <img src="assets/img/groundUpWebsite.png" alt="project image" class="projects-img">
+
+                            <div class="span projects-subtitle">GroundUp Construction Co.</div>
+                            <h1 class="projects-title">Single Page Website</h1>
+
+                            <a href="#projects" class="projects-button">
+                                See More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <!-- swiper arrows -->
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <!-- swiper-pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <!-- <section class="testimonial section">
+
+        </section> -->
+
+
+        <!--==================== BRANDS WORKED WITH ====================-->
+        <section class="brands section">
+            <div class="brands-section ">
+                <h2 class="section-title">Brands & Projects</h2>
+                <span class="section-subtitle"> Brands I've Worked With</span>
+
+
+                <!-- Scrolling Logo Carousel -->
+                <div class="logo-carousel section-border">
+                    <div class="logo-track">
+                        <!-- First set of logos -->
+                        <div class="logo-slide">
+                            <img src="assets/img/newxon.png" alt="Brand 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="assets/img/newben.png" alt="Brand 2">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="assets/img/newloop.png" alt="Brand 3">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="assets/img/xifin_logo-removebg-preview2.png" alt="Brand 4">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="assets/img/brand-logo.png" alt="Brand 5">
+                        </div>
+
+
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="logo-slide">
+                            <img src="assets/img/newxon.png" alt="Brand 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="assets/img/newben.png" alt="Brand 2">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="assets/img/newloop.png" alt="Brand 3">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="assets/img/xifin_logo-removebg-preview2.png" alt="Brand 4">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="assets/img/brand-logo.png" alt="Brand 5">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <img src="assets/img/shape-wawes.svg" alt="brands image" class="brands-img"> -->
+            </div>
+
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <span class="section-subtitle">Here's How You Can Reach Me</span>
+
+            <div class="contact-container container grid section-border">
+                <div class="contact-content">
+                    <h3 class="contact-title">
+                        <i class="ri-chat-2-line"></i> Talk To Me
+                    </h3>
+
+                    <div class="contact-info">
+                        <div class="contact-data">
+                            <span class="contact-data-title">Email:</span>
+                            <address class="contact-data-info">favouraloy98@gmail.com</address>
+                        </div>
+
+                        <div class="contact-data">
+                            <span class="contact-data-title">Whatsapp</span>
+                            <address class="contact-data-info">+2348109442704</address>
+                            <a href="https://wa.me/+2348109442704" target="_blank" class="contact-button">
+                                Send a Dm <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="contact-data">
+                            <span class="contact-data-title">For Consultation</span>
+                            <span class="contact-data-info">Click Link Below</span>
+                            <a href="#contact" class="contact-button">
+                                Book a Call <i class="ri-arrow-right-line"></i>
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-content">
+                    <h3 class="contact-title">
+                        <i class="ri-send-plane-line"></i> Write to Me about Your Project
+                    </h3>
+
+                    <form action="" class="contact-form" id="contact-form">
+                        <div class="contact-form-div">
+                            <label for="name" class="contact-form-tag">Names</label>
+                            <input type="text" required placeholder="Write your names" class="contact-form-input"
+                                name="user_name" id="contact-name">
+                        </div>
+
+                        <div class="contact-form-div">
+                            <label for="name" class="contact-form-tag">Mail</label>
+                            <input type="email" required placeholder="Write your email" class="contact-form-input"
+                                name="user_email" id="contact-email">
+                        </div>
+
+                        <div class="contact-form-div contact-form-area">
+                            <label for="name" class="contact-form-tag">Write Your Project</label>
+                            <textarea name="user_project" id="contact-project" placeholder="write about your project"
+                                class="contact-form-input"></textarea>
+                        </div>
+
+                        <p class="contact-message" id="contact-message"></p>
+
+                        <button type="submit" class="contact-button">
+                            Submit <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer-container container">
+            <h1 class="footer-title">Favour Aloy</h1>
+            <p>Frontend Developer</p>
+
+            <ul class="footer-list">
+                <li>
+                    <a href="#footer" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer-link">Projects</a>
+                </li>
+                <li>
+                    <a href="#services" class="footer-link">Services</a>
+                </li>
+            </ul>
+
+            <ul class="footer-social">
+                <a href="https://www.linkedin.com/in/favour-aloy-ba7a94292" class="footer-social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+
+                <a href="https://www.instagram.com/favouraloy98?igsh=MW14NHVkOGQxZ3ozMA%3D%3D&utm_source=qr"
+                    class="footer-social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+
+                <a href="https://x.com/favour_aloy98?s=21" class="footer-social-link">
+                    <i class="ri-twitter-line"></i>
+                </a>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
