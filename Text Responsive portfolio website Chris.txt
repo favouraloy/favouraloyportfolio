@@ -258,6 +258,147 @@ Submit
 .footer__title
 Chris
 
+<div class="projects-page-content">
+                            <img src="assets/img/bamalik.png" alt="project image" class="projects-page-img">
+
+                            <div class="span projects-subtitle">Bamalik Architects Website</div>
+                            <h1 class="projects-title">Website Development</h1>
+
+                            <a class="projects-button">
+                                See More <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                            <div class="projects-modal">
+                                <div class="projects-modal-content">
+                                    <i class="ri-close-line projects-modal-close"></i>
+
+                                    <h2 class="projects-modal-title"> Website Development for Bamalik Architects</h2>
+
+                                    <img src="assets/img/bamalik.png" alt="image" class="projects-modal-image1">
+                                    <span class="projects-subtitle">What We Achieved</span>
+                                    <h3 class="projects-title">Key Achievements</h3>
+
+                                    <ul class="projects-modal-list grid">
+
+                                        <li class="projects-modal-item">
+                                            <span class="bold"> Professional Brand Presence:</span> The website elevates
+                                            Bamalik Architects’ digital identity, reflecting their architectural style,
+                                            innovation, and
+                                            professionalism.
+
+                                        </li>
+
+                                        <li class="projects-modal-item">
+                                            <span class="bold"> Project Showcase:</span>Built a dynamic portfolio
+                                            section to display past construction and design projects, helping build
+                                            credibility with
+                                            prospective clients.
+
+                                        </li>
+
+                                        <li class="projects-modal-item">
+                                            <span class="bold">User-Friendly Navigation:</span> Created a clear and
+                                            intuitive site structure to allow users to easily explore services,
+                                            projects, and contact options.
+
+                                        </li>
+                                        <li class="projects-modal-item">
+                                            <span class="bold"> Contact Integration:</span> Integrated inquiry forms and
+                                            clear CTAs to simplify client outreach and improve lead generation
+                                        </li>
+                                    </ul>
+                                    <div class="projects-modal-div-image-holder">
+
+                                        <img src="assets/img/bamalik2.png" alt="image" class="projects-modal-image2">
+
+                                        <div class="projects-modal-div-item">
+                                            <h3 class="projects-title">Outcome</h3>
+                                            <p class="projects-modal-description">
+                                                The Bamalik Architects website positions the company as a reliable and
+                                                innovative player in the construction industry.
+                                                It serves as both a digital portfolio and a client acquisition tool,
+                                                helping them connect with potential partners,
+                                                clients, and investors while strengthening their online credibility.
+
+                                            </p>
+
+                                            <a href="" target="_blank" class="projects-button">
+                                                View Live Demo <i class="ri-arrow-right-line"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+<div class="projects-page-content">
+                            <img src="assets/img/haircoin2.png" alt="project image" class="projects-page-img">
+
+                            <div class="span projects-subtitle">Haircoin Brand Website</div>
+                            <h1 class="projects-title">UI/UX Implementation</h1>
+
+                            <a class="projects-button">
+                                Read More <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                            <div class="projects-modal">
+                                <div class="projects-modal-content">
+                                    <i class="ri-close-line projects-modal-close"></i>
+
+                                    <h2 class="projects-modal-title"> Haircoin UI/UX Implementation.</h2>
+
+                                    <img src="assets/img/haircoin2.png" alt="image" class="projects-modal-image1">
+                                    <span class="projects-subtitle">What We Achieved</span>
+                                    <h3 class="projects-title">Key Achievements</h3>
+
+                                    <ul class="projects-modal-list grid">
+
+                                        <li class="projects-modal-item">
+                                            <span class="bold">Bold Brand Presentation:</span> The Landing page was
+                                            crafted to
+                                            reflect Haircoin's unique personality and style, using sleek visuals and
+                                            vibrant colors
+                                            and brand consistent design.
+                                        </li>
+
+                                        <li class="projects-modal-item">
+                                            <span class="bold"> Conversion-Focused Layout:</span>Strategically placed
+                                            call to actions (CTAs)
+                                            and contact sections were implemented to drive booking and customer
+                                            inquiries.
+                                        </li>
+
+                                        <li class="projects-modal-item">
+                                            <span class="bold"> Engaging Content Sections:</span>Introduced Haircoin's
+                                            philosophy, and brand
+                                            story in a way that connects with potential clients instantly.
+                                        </li>
+                                    </ul>
+                                    <div class="projects-modal-div-image-holder">
+
+                                        <img src="assets/img/harcoin.png" alt="image" class="projects-modal-image2">
+
+                                        <div class="projects-modal-div-item">
+                                            <h3 class="projects-title">Outcome</h3>
+                                            <p class="projects-modal-description">
+                                                The final landing page delivers a strong first impression, capturing the
+                                                essence of Haircoin’s brand and successfully
+                                                turning visitors into potential clients. The clean and responsive
+                                                design, paired with clear CTAs, helps drive engagement
+                                                and positions Haircoin as a premium hairdressing brand in the digital
+                                                space.
+                                            </p>
+
+                                            <!-- <a href="" target="_blank" class="projects-button">
+                                                View Live Demo <i class="ri-arrow-right-line"></i>
+                                            </a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 <p>
 Frontend Developer
 

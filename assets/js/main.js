@@ -203,7 +203,7 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home-data, .projects-container, .logo-carousel, .footer-container`)
-sr.reveal(`.home-info div`, { delay: 200, origin: 'bottom', interval: '100' })
+sr.reveal(`.home-info div, .projects-page-holder`, { delay: 200, origin: 'bottom', interval: '100' })
 sr.reveal(`.skills-content:nth-child(1)`, { origin: 'bottom' })
 sr.reveal(`.contact-content:nth-child(1)`, { origin: 'left' })
 sr.reveal(`.contact-content:nth-child(2)`, { origin: 'right' })
