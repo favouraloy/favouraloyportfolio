@@ -280,6 +280,7 @@ body.dark-theme {
   transition: color 0.3s;
 }
 
+
 .nav-link:hover {
   color: var(--title-color);
 }
