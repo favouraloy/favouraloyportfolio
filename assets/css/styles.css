@@ -935,6 +935,13 @@ body.dark-theme {
   font-size: var(--small-font-size);
 }
 
+.book-call {
+  padding: 0.8rem;
+  border-radius: 5rem;
+  background-color: black;
+  color: #ffff;
+}
+
 .contact-button i {
   font-size: 1rem;
   transition: transform 0.3s;
